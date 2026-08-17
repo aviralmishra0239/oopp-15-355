@@ -1,28 +1,35 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
-inline int add(int a, int b)
+
+inline int square(int n)
+{
+    return n * n;
+}
+
+int addition(int a, int b = 10)
 {
     return a + b;
 }
-int multiply(int a, int b = 2)
+
+int multiply(int a, int b)
 {
     return a * b;
 }
-int subtract(int a, int b)
+
+double multiply(double a, double b)
 {
-    return a - b;
+    return a * b;
 }
-float subtract(float a, float b)
-{
-    return a - b;
-}
+
 int main()
 {
-    int x = 20, y = 10;
-    cout <<"Addition:"<<add(x, y)<<endl;
-    cout <<"Multiplication(default argument):"<< multiply(x) << endl;
-    cout <<"Multiplication(two arguments):"<< multiply(x, y) << endl;
-    cout <<"Subtraction(int):"<< subtract(x, y) << endl;
-    cout <<"Subtraction(float):"<< subtract(20.5f, 10.2f) << endl;
+    cout << square(5) << endl;
+
+    cout << addition(20) << endl;
+    cout << addition(20, 30) << endl;
+
+    cout << multiply(4, 5) << endl;
+    cout << multiply(2.5, 4.0) << endl;
+
     return 0;
 }

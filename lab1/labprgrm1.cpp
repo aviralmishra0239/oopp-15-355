@@ -1,4 +1,4 @@
-// Design a program to convert a procedural implementation of student record system into an OPPP approach..
+// Design a program to convert a procedural implementation of student record system into an OPPP approach
 #include<iostream>
 using namespace std;
 class student{
